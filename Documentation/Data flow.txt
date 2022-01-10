@@ -1,0 +1,50 @@
+----------DATA FLOW-----------------
+-------Table Schema-----------
+1) STUDENT TABLE
+-uni_id,Fname,Lname,birthDate,country,school_name,email, year_of_study.
+
+2)LECTURER
+-uni_id,Fname,Lname,birthDate,country,school_name,email.
+
+3)ADMIN TABLE
+-uni_id,Fname,Lname,birthDate,country,school_name,email.
+
+4)COURSE TABLE
+SAME AS CLASS DIAGRAM
+
+5)ASSIGNMENT TABLE
+SAME AS CLASS DIAGRAM BUT THE "FILE" column will contain only full file path
+
+6)COURSE_METADATA TABLE
+student_id, course_id, course_grade.
+
+7) ASSIGNMENT TABLE
+student_id, asgn_id, course_id,solution_file_path, asgn_grade
+
+--------INPUTTING DATA SEQUENCE--------------
+
+1) STUDENT and ADMIN (can use Threading techniques)
+2) Lecturer
+3) COURSE METADATA AND ASSIGNMENT METADATA (DEPENDANT ON STUDENT DATASTRUCTURE )
+4) ASSIGNMENT
+
+-----------Accomodate the entered data-----------
+explained later
+------------Output of files----------
+1) STUDENT and ADMIN and COURSE (can use Threading techniques)
+2) COURSE METADATA AND ASSIGNMENT METADATA (DEPENDANT ON STUDENT DATASTRUCTURE )
+3) ASSIGNMENT
+4) Lecturer
+
+
+
+
+
+
+
+
+
+
+
+
+
