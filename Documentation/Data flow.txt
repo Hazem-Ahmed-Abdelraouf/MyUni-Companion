@@ -1,13 +1,13 @@
 ----------DATA FLOW-----------------
 -------Table Schema-----------
 1) STUDENT TABLE
--uni_id,Fname,Lname,birthDate,country,school_name,email, year_of_study.
+-uni_id, Fname, Lname, birthDate, country, school_name, email, year_of_study, password.
 
 2)LECTURER
--uni_id,Fname,Lname,birthDate,country,school_name,email.
+-uni_id, Fname, Lname, birthDate, country, school_name, email, password.
 
 3)ADMIN TABLE
--uni_id,Fname,Lname,birthDate,country,school_name,email.
+-uni_id, Fname, Lname, birthDate, country, school_name ,email, password.
 
 4)COURSE TABLE
 SAME AS CLASS DIAGRAM
