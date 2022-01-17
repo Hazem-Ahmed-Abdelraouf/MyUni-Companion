@@ -1,0 +1,11 @@
+lecturer ID,lecturer Fname,lecturer Lname,Day,Month,Year,lecturer Country,lecturer School name,lecturer Email,lecturer Password
+1001,Chan,Huan Yong,20,6,1980,Malaysia ,Computer Science,hychan@usm.my,123456
+1002,Tan,Tien Ping,11,9,1991,Malaysia ,Computer Science,tienping@usm.my,123456
+1003,Liew,Suet Yan,15,2,1993,Malaysia,Computer Science,asyliew@usm.my,123456
+1004,Sharifah,Mashita Syed Mohamad,14,4,1992,Malaysia,Computer Science,mashita@usm.my,123456
+1005,G.C.,Sodhy,16,8,1980,Malaysia,Computer Science,sodhy@usm.my,123456
+1006,Mohd,Najwadi Yusoff,1,5,1989,Malaysia,Computer Science,najwadi@usm.my,123456
+1007,Nur,Hana Samsudin,4,3,1985,Malaysia,Computer Science,nurhana.samsudin@usm.my,123456
+1008,Maziani,Sabudin,6,4,1970,Malaysia,Computer Science,maziani@usm.my,123456
+1009,Nur Intan,Raihana Ruhaiyem,15,2,1990,Malaysia,Computer Science,intanraihana@usm.my,123456
+1010,Cheah,Yu-N,16,1,1984,Malaysia,Computer Science,yucheah@usm.my,123456
