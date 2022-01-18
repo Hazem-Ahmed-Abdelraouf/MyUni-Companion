@@ -8,13 +8,14 @@ public class Assignment_Metadata {
     private File submission_file;
     double assignment_grade;
 
-    public Assignment_Metadata(){
+    public Assignment_Metadata() {
         assignment_id = 0;
         course_id = "";
         submission_file = null;
         assignment_grade = -1;
     }
-    public Assignment_Metadata(int asgn_id, String course_id, String file_path, double asgn_grade){
+
+    public Assignment_Metadata(int asgn_id, String course_id, String file_path, double asgn_grade) {
         assignment_id = asgn_id;
         this.course_id = course_id;
         submission_file = new File(file_path);
@@ -52,7 +53,6 @@ public class Assignment_Metadata {
     public void setAssignment_grade(double assignment_grade) {
         this.assignment_grade = assignment_grade;
     }
-
 
 
     public boolean equals(final Object o) {
