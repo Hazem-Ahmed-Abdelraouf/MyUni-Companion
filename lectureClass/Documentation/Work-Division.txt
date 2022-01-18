@@ -1,5 +1,0 @@
----------------CLASSES WITH CSV TABLES---------------
-Hazem: Student and Assignment_Metadata
-Saifie: Lecturer and Assignment
-Shihan: Course and Course_Metadata
-Wang: Member and Admin
