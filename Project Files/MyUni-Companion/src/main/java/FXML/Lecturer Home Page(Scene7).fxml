@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.38198198198198197" orientation="VERTICAL" prefHeight="557.0" prefWidth="911.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="909.0">
+               <children>
+                  <TitledPane alignment="TOP_CENTER" prefHeight="24.0" prefWidth="909.0" text="Lecturer Information" />
+                  <TextFlow layoutY="24.0" prefHeight="186.0" prefWidth="909.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="349.0" prefWidth="909.0">
+               <children>
+                  <TitledPane alignment="TOP_CENTER" prefHeight="24.0" prefWidth="909.0" text="Course Table" />
+                  <TableView layoutX="-1.0" layoutY="24.0" prefHeight="226.0" prefWidth="911.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="69.0" layoutY="276.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="124.0" text="Inspect">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="353.0" layoutY="276.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="161.0" text="Register Course">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="661.0" layoutY="276.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="180.0" text="Unregister Course">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
