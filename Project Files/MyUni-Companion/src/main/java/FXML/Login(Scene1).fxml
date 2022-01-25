@@ -8,54 +8,50 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
+
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox layoutX="188.0" layoutY="82.0" prefHeight="290.0" prefWidth="604.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <SplitPane dividerPositions="0.29797979797979796">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="288.0" prefWidth="567.0">
-                     <children>
-                        <ImageView fitHeight="311.0" fitWidth="195.0" layoutX="-9.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@ringlogo-01(1)(1).png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="288.0" prefWidth="217.0">
-                     <children>
-                        <Label layoutX="27.0" layoutY="36.0" prefHeight="55.0" prefWidth="125.0" text="Username:" AnchorPane.leftAnchor="27.0">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="27.0" layoutY="124.0" prefHeight="55.0" prefWidth="125.0" text="Password:">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <TextField layoutX="166.0" layoutY="46.0" prefHeight="45.0" prefWidth="232.0" promptText="Username">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </TextField>
-                        <PasswordField layoutX="166.0" layoutY="133.0" prefHeight="45.0" prefWidth="232.0" promptText="Password">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </PasswordField>
-                        <Button layoutX="73.0" layoutY="227.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="Enter" />
-                        <Button layoutX="234.0" layoutY="226.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="New account" />
-                     </children>
-                  </AnchorPane>
-              </items>
-            </SplitPane>
-         </children>
-      </HBox>
+      <SplitPane dividerPositions="0.3193979933110368" layoutX="33.0" layoutY="40.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ringlogo-01(1)(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="87.0" prefHeight="44.0" prefWidth="114.0" text="Username:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="155.0" prefHeight="44.0" prefWidth="114.0" text="Password:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="138.0" layoutY="101.0" />
+                  <PasswordField layoutX="138.0" layoutY="166.0" />
+                  <Button layoutX="37.0" layoutY="250.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="84.0" text="Enter">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="219.0" layoutY="250.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="141.0" text="New account">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+
    </children>
 </AnchorPane>

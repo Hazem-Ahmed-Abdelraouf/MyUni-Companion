@@ -4,26 +4,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="402.0" layoutY="275.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="215.0" text="Inspect Assignment">
+      <Button layoutX="339.0" layoutY="255.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="151.0" text="Inspect">
          <font>
-            <Font size="20.0" />
+            <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="402.0" layoutY="82.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="215.0" text="Submit Assignment">
+      <Button layoutX="333.0" layoutY="80.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="215.0" text="Submit Assignment">
          <font>
-            <Font size="20.0" />
+            <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="48.0" layoutY="76.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="241.0" text="Return to home page">
+      <Button layoutX="24.0" layoutY="80.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="241.0" text="Return to home page">
          <font>
-            <Font size="20.0" />
+            <Font size="17.0" />
          </font>
       </Button>
-      <Button layoutX="48.0" layoutY="275.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="241.0" text="Return to Course page">
+      <Button layoutX="34.0" layoutY="255.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="241.0" text="Return to Course page">
          <font>
-            <Font size="20.0" />
+            <Font size="17.0" />
+
          </font>
       </Button>
    </children>
