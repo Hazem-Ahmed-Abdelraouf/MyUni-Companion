@@ -1,8 +1,8 @@
-import lombok.Data;
+package org.companion.myunicompanion;
+
 import java.time.LocalDate;
 import java.time.Period;
 
-@Data
 class Member {
     private int uni_ID;
     private String Fname;
@@ -11,6 +11,8 @@ class Member {
     private String school_name;
     private String email;
     private LocalDate birthdate;
+    private String password;
+
 
     public Member() {
         uni_ID = 0;
@@ -22,9 +24,14 @@ class Member {
         birthdate = LocalDate.now();
     }
 
+    public void setPassword(String password){
+        this.password = password;
+    }
+    public String getPassword(){
+        return this.password;
+    }
     public int getUni_ID() {
         return this.uni_ID;
-        //System.out.println();
     }
 
     public String getFname() {
@@ -52,9 +59,11 @@ class Member {
     }
 
     public void setBirthdate(int year,int month_num,int day_of_month) {
-        birthdate = LocalDate.of(year, month_num, day_of_month;
+        birthdate = LocalDate.of(year, month_num, day_of_month);
     }
-
+    public int getBirthdate(){
+        return Period.between(birthdate, LocalDate.now()).getYears();
+    }
     public void setUni_ID(int uni_ID) {
         this.uni_ID = uni_ID;
     }
@@ -132,5 +141,9 @@ class Member {
         final Object $birthdate = this.getBirthdate();
         result = result * PRIME + ($birthdate == null ? 43 : $birthdate.hashCode());
         return result;
+    }
+
+    public void setBirthdate(LocalDate birthdate) {
+        this.birthdate = birthdate;
     }
 }
