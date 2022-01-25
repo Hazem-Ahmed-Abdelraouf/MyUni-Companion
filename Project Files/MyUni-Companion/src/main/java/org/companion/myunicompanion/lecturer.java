@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.*;
 import java.time.Period;
 @Data
-public class lecturer {
+public class lecturer extends Member{
 
     private ArrayList<String> courses_taught;
     private LocalDate date_hired;

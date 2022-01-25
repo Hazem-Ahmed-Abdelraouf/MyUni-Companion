@@ -1,3 +1,5 @@
+package org.companion.myunicompanion;
+
 public class Course {
 
     int course_ID;
@@ -85,9 +87,6 @@ public Course()
         return lecturer_id;
     }
 
-    public static void main(String[] args) {
-
-    }
 
 
     public boolean equals(final Object o) {

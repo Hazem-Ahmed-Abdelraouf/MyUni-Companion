@@ -2,19 +2,17 @@ package org.companion.myunicompanion;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Student /*extends Member*/ {
-    private String password;
+public class Student extends Member {
     private LocalDate date_enrolled;
     private HashMap<Integer, Assignment_Metadata> asgns_metadata;
-    /*
-    private HashMap<String, Course_Metadata> course_metadata;
-    */
+    private HashMap<String, Course_Metadata> courses_metadata;
+
 
     public Student() {
-        /* super();*/
-        password = "";
+        super();
         date_enrolled = LocalDate.now();
         asgns_metadata = new HashMap<>();
     }
@@ -27,7 +25,7 @@ public class Student /*extends Member*/ {
         return Period.between(date_enrolled, LocalDate.now()).getYears();
     }
 
-    /*
+
     void add_course_metadata(String course_id, Course_Metadata course){
         courses_metadata.put(course_id,course);
     }
@@ -53,11 +51,7 @@ public class Student /*extends Member*/ {
         else
             return null;
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> b228459b0e1bc70c715c246c3e6bd0cfa0af971a
-    */
     void add_asgn_metadata(int asgn_id, Assignment_Metadata asgn) {
         asgns_metadata.put(asgn_id, asgn);
     }
@@ -94,26 +88,22 @@ public class Student /*extends Member*/ {
     }
 
     public boolean unregister_course(String course_id) {
-        /*
+
         if(courses_metadata.containsKey(course_id)){
-            ArrayList<String> asgns_keys = new ArrayList<>();
+            ArrayList<Integer> asgns_keys = new ArrayList<>();
             courses_metadata.remove(course_id);
             //getting the asssinment keys to delete them
             asgns_metadata.forEach((key,asgn)
             -> {
                     if(asgn.getCourse_id() == course_id)
-                        asgns_keys.add(asgn.getAssignment_id())
+                        asgns_keys.add(asgn.getAssignment_id());
             });
              //deleting the assignments metadata
             for(int i = 0 ; i < asgns_keys.size() ; i++)
-                asgns_metadata.remove(asgns_keys(i));
+                asgns_metadata.remove(asgns_keys.get(i));
             return true;
          }
-<<<<<<< HEAD
-=======
 
->>>>>>> b228459b0e1bc70c715c246c3e6bd0cfa0af971a
-        */
         //returns false if there is no
         return false;
     }
@@ -121,10 +111,11 @@ public class Student /*extends Member*/ {
     HashMap<Integer, Assignment_Metadata> get_all_assignments() {
         return asgns_metadata;
     }
-    /*
+
     HashMap<String, Course_Metadata> get_all_courses(){
         return courses_metadata;
     }
-    */
+
+
 
 }
