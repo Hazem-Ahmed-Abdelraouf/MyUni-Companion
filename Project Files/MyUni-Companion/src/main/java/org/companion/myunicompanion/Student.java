@@ -108,11 +108,11 @@ public class Student extends Member {
         return false;
     }
 
-    HashMap<Integer, Assignment_Metadata> get_all_assignments() {
+    public HashMap<Integer, Assignment_Metadata> get_all_assignments() {
         return asgns_metadata;
     }
 
-    HashMap<String, Course_Metadata> get_all_courses(){
+    public HashMap<String, Course_Metadata> get_all_courses(){
         return courses_metadata;
     }
 
