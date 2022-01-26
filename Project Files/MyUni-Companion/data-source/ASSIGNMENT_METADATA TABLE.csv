@@ -1,0 +1,25 @@
+student_id, asgn_id, course_id,answer, asgn_grade
+1001,101,CST232,increase chances of thrashing,A
+1002,101,CST232,increase chances of thrashing,A
+1003,111,CST232,Internal fragmentation,B
+1004,111,CST232,Internal fragmentation,B
+1005,202,CPT113,A queue is an ordered collection of items where the addition of new items happens at one end,A-
+1006,202,CPT113,A queue is an ordered collection of items where the addition of new items happens at one end,A-
+1007,222,CPT113,FIFO,B+
+1008,222,CPT113,FIFO,B+
+1009,303,AKW104,Relatively limited resources,B
+1010,303,AKW104,Relatively limited resources,B
+1011,333,AKW104,Residential household,A-
+1012,333,AKW104,Residential household,A-
+1013,404,AKP201,Exchange,C+
+1014,404,AKP201,Exchange,C+
+1015,444,AKP201,Marketing,A
+1016,444,AKP201,Marketing,A
+1017,505,SCE132,solid and liquid,B+
+1018,505,SCE132,solid and liquid,B+
+1019,555,SCE132,Brown bottle,B
+1020,555,SCE132,Brown bottle,B
+1021,606,SCU211,Sealed,A
+1022,606,SCU211,Sealed,A
+1023,666,SCU211,Liquid seal,B+
+1024,666,SCU211,Liquid seal,B+

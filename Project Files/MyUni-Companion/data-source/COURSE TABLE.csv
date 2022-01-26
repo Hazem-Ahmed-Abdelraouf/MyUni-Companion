@@ -1,0 +1,10 @@
+course_ID,course_name,course_type,credits_num,school_name,year_applicable,lecturer_id
+CST232,OPERATING SYSTEMS,T,4,Computer Science,2,1111
+CPT113,PROGRAMMING METHODOLOGY & DATA STRUCTURES,T,4,Computer Science,1,2222
+AKW104,ECONMIC,T,4,Management,2,3333
+AKP201,MARKETING,T,4,Management,2,4444
+SCE132,ORGANIC CHEMISTRY,T,4,Chemical Science,2,5555
+SCU211,INORGANIC CHEMISTRY,T,4,Chemical Science,1,6666
+CMT221,DATABASE ORGANISATION AND DESIGN,T,3,Computer Science,2,-99
+SCE135,BIOCHEMISTRY,T,3,Chemical Science,3,-99
+AKW103,MANAGEMENT,T,4,Management,1,-99

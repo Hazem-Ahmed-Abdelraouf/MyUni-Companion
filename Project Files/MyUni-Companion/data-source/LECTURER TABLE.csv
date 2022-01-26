@@ -1,0 +1,7 @@
+uni_id, Fname, Lname, day_born, month_born, year_born, country, school_name, email, password
+1111,Vivian,Smith,12,12,1975,U.S,Computer Science,VivianSmith@edu.my,abcd1111
+2222,Nancy,Williams,10,9,1982,U.S,Computer Science,NancyWilliams@edu.my,abcd2222
+3333,Emma,Johnson,5,5,1969,U.S,Management,EmmaJohnson@edu.my,abcd3333
+4444,Melody,Brown,3,3,1970,U.S,Management,MelodyBrown@edu.my,abcd4444
+5555,Alice,Davis,4,10,1977,U.S,Chemical Science,AliceDavis@edu.my,abcd5555
+6666,Jacquelyn,Miller,10,9,1982,U.S,Chemical Science,JacquelynMiller@edu.my,abcd6666
