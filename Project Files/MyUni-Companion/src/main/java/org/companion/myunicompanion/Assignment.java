@@ -1,9 +1,7 @@
 package org.companion.myunicompanion;
 
-import lombok.Data;
-
 import java.io.File;
-@Data
+
 public class Assignment {
 
     private int assignment_ID;

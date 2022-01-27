@@ -1,9 +1,9 @@
 package org.companion.myunicompanion;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.HashMap;
+
 
 public class Student extends Member {
     private LocalDate date_enrolled;
@@ -36,7 +36,7 @@ public class Student extends Member {
         else
             return null;
     }
-    public boolean set_course_grade(String course_id, double grade){
+    public boolean set_course_grade(String course_id, String grade){
         //verify if id exist
         if(courses_metadata.containsKey(course_id)){
             courses_metadata.get(course_id).setCourse_grade(grade);
@@ -45,7 +45,7 @@ public class Student extends Member {
         else
             return false;
     }
-    public Double get_course_grade(String course_id){
+    public String get_course_grade(String course_id){
         if(courses_metadata.containsKey(course_id))
             return courses_metadata.get(course_id).getCourse_grade();
         else
@@ -115,6 +115,9 @@ public class Student extends Member {
     public HashMap<String, Course_Metadata> get_all_courses(){
         return courses_metadata;
     }
+
+
+
 
 
 

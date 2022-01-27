@@ -1,27 +1,27 @@
 package org.companion.myunicompanion;
 
 public class Course_Metadata {
-    private int course_ID;
-    private double course_grade;
+    private String course_ID;
+    private String course_grade;
 
     public Course_Metadata(){
-        course_ID = 0;
-        course_grade=0.0;
+        course_ID = "";
+        course_grade="";
     }
-    public void setCourse_ID(int course_ID) {
+    public void setCourse_ID(String course_ID) {
         this.course_ID = course_ID;
     }
 
-    public int getCourse_ID() {
+    public String getCourse_ID() {
         return course_ID;
     }
 
-    public void setCourse_grade(double course_grade) {
+    public void setCourse_grade(String course_grade) {
         this.course_grade = course_grade;
     }
 
 
-    public double getCourse_grade() {
+    public String getCourse_grade() {
         return this.course_grade;
     }
 
