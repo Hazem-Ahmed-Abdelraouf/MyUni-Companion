@@ -3,7 +3,8 @@ package org.companion.myunicompanion;
 import java.time.LocalDate;
 import java.time.Period;
 
-class Member {
+public class Member {
+
     private int uni_ID;
     private String Fname;
     private String Lname;

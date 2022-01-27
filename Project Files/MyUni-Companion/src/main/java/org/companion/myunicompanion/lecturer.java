@@ -1,17 +1,14 @@
 package org.companion.myunicompanion;
 
-import lombok.Data;
-
-import java.lang.String;
 import java.time.LocalDate;
-import java.util.*;
 import java.time.Period;
-@Data
+import java.util.ArrayList;
+
 public class lecturer extends Member{
 
     private ArrayList<String> courses_taught;
     private LocalDate date_hired;
-    lecturer(){
+    public lecturer(){
         //super();
         courses_taught  = new ArrayList<>();
         date_hired = LocalDate.now();

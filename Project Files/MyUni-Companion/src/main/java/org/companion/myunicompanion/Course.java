@@ -2,7 +2,7 @@ package org.companion.myunicompanion;
 
 public class Course {
 
-    int course_ID;
+    String course_ID;
     private int credits_num;
     private String course_name;
     private String course_type;
@@ -11,7 +11,7 @@ public class Course {
     private int lecturer_id;
 public Course()
 {
-    course_ID = 0;
+    course_ID = "";
     credits_num = 0;
     course_name = " ";
     course_type = " ";
@@ -20,7 +20,7 @@ public Course()
     lecturer_id = 0;
 }
 
-   public Course(int course_ID,int credits_num,String course_name,String course_type,String school_name,int year_applicable,int lecturer_id)
+   public Course(String course_ID,int credits_num,String course_name,String course_type,String school_name,int year_applicable,int lecturer_id)
    {
        this.course_ID=course_ID;
        this.credits_num=credits_num;
@@ -31,11 +31,11 @@ public Course()
        this.lecturer_id=lecturer_id;
    }
 
-    public void setCourse_ID(int course_ID) {
+    public void setCourse_ID(String course_ID) {
         this.course_ID = course_ID;
     }
 
-    public int getCourse_ID() {
+    public String getCourse_ID() {
         return course_ID;
     }
 
