@@ -14,6 +14,7 @@ public class Student extends Member {
     public Student() {
         super();
         date_enrolled = LocalDate.now();
+        courses_metadata = new HashMap<>();
         asgns_metadata = new HashMap<>();
     }
 
@@ -26,7 +27,7 @@ public class Student extends Member {
     }
 
 
-    void add_course_metadata(String course_id, Course_Metadata course){
+    public void add_course_metadata(String course_id, Course_Metadata course){
         courses_metadata.put(course_id,course);
     }
     public Course_Metadata get_course_metadata(String course_id){
@@ -52,7 +53,7 @@ public class Student extends Member {
             return null;
     }
 
-    void add_asgn_metadata(int asgn_id, Assignment_Metadata asgn) {
+    public void add_asgn_metadata(int asgn_id, Assignment_Metadata asgn) {
         asgns_metadata.put(asgn_id, asgn);
     }
 
@@ -115,6 +116,7 @@ public class Student extends Member {
     public HashMap<String, Course_Metadata> get_all_courses(){
         return courses_metadata;
     }
+
 
 
 

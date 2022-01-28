@@ -202,7 +202,7 @@ public class DatabaseFiller {
                 course_metadata.setCourse_grade(course_grade);
                 //making sure that this course metadata belongs to an actual student in the system
                 if (db.students.containsKey(stu_id) && db.courses.containsKey(course_id)) {
-                    db.students.get(stu_id).get_all_courses().put(course_id, course_metadata);
+                    db.students.get(stu_id).add_course_metadata(course_id, course_metadata);
                 }
 
             }
@@ -232,7 +232,7 @@ public class DatabaseFiller {
                 Assignment_Metadata assignment_metadata = new Assignment_Metadata(asgn_id,course_id,asgn_answer,asgn_grade);
                 //making sure that this assignment metadata belongs to an actual student in the system
                 if (db.students.containsKey(stu_id) && db.assignments.containsKey(asgn_id)) {
-                    db.students.get(stu_id).get_all_assignments().put(asgn_id, assignment_metadata);
+                    db.students.get(stu_id).add_asgn_metadata(asgn_id, assignment_metadata);
                 }
 
             }
