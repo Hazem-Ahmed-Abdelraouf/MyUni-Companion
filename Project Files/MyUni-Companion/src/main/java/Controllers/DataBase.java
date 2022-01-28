@@ -10,7 +10,7 @@ public class DataBase {
     public static HashMap<Integer, Student> students = new HashMap<>();
     public static HashMap<Integer, lecturer> lecturers = new HashMap<>();
     public static HashMap<String, Course> courses = new HashMap<>();
-    public static HashMap<String, Assignment> assignments = new HashMap<>();
+    public static HashMap<Integer, Assignment> assignments = new HashMap<>();
     private static DataBase instance = new DataBase();
     //public JavaSecurityAccess.ProtectionDomainCache temStu;
 

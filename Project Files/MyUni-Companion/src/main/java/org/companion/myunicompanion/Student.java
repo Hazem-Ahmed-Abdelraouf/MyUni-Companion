@@ -64,7 +64,7 @@ public class Student extends Member {
             return null;
     }
 
-    public boolean set_asgn_grade(int asgn_id, double grade) {
+    public boolean set_asgn_grade(int asgn_id, String grade) {
         //verify if id exist
         if (asgns_metadata.containsKey(asgn_id)) {
             asgns_metadata.get(asgn_id).setAssignment_grade(grade);
@@ -73,7 +73,7 @@ public class Student extends Member {
             return false;
     }
 
-    public Double get_asgn_grade(int asgn_id) {
+    public String get_asgn_grade(int asgn_id) {
         if (asgns_metadata.containsKey(asgn_id))
             return asgns_metadata.get(asgn_id).getAssignment_grade();
         else

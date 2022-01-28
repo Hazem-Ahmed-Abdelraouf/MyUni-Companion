@@ -1,6 +1,5 @@
 package org.companion.myunicompanion;
 
-import java.io.File;
 
 public class Assignment {
 
@@ -8,7 +7,7 @@ public class Assignment {
     private String assignment_name;
     private String course_ID;
     private String assignment_type;
-    private File assignment_question;
+    private String assignment_question;
 
 
     public void setAssignment_ID(int assignment_ID) {
@@ -45,12 +44,12 @@ public class Assignment {
 
 
     public void set_assignment_question(String file_path) {
-        assignment_question = new File(file_path);
+        assignment_question = new String(file_path);
     }
 
-    public File get;
+    public String get;
 
-    File assignment_question() {
+    String assignment_question() {
         return assignment_question;
     }
 

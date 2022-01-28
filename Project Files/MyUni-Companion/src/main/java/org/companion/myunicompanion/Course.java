@@ -89,12 +89,20 @@ public Course()
 
 
 
+
+
+    public String toString() {
+        return "Course(course_ID=" + this.getCourse_ID() + ", credits_num=" + this.getCredits_num() + ", course_name=" + this.getCourse_name() + ", course_type=" + this.getCourse_type() + ", school_name=" + this.getSchool_name() + ", year_applicable=" + this.getYear_applicable() + ", lecturer_id=" + this.getLecturer_id() + ")";
+    }
+
     public boolean equals(final Object o) {
         if (o == this) return true;
         if (!(o instanceof Course)) return false;
         final Course other = (Course) o;
         if (!other.canEqual((Object) this)) return false;
-        if (this.getCourse_ID() != other.getCourse_ID()) return false;
+        final Object this$course_ID = this.getCourse_ID();
+        final Object other$course_ID = other.getCourse_ID();
+        if (this$course_ID == null ? other$course_ID != null : !this$course_ID.equals(other$course_ID)) return false;
         if (this.getCredits_num() != other.getCredits_num()) return false;
         final Object this$course_name = this.getCourse_name();
         final Object other$course_name = other.getCourse_name();
@@ -120,7 +128,8 @@ public Course()
     public int hashCode() {
         final int PRIME = 59;
         int result = 1;
-        result = result * PRIME + this.getCourse_ID();
+        final Object $course_ID = this.getCourse_ID();
+        result = result * PRIME + ($course_ID == null ? 43 : $course_ID.hashCode());
         result = result * PRIME + this.getCredits_num();
         final Object $course_name = this.getCourse_name();
         result = result * PRIME + ($course_name == null ? 43 : $course_name.hashCode());
@@ -131,10 +140,6 @@ public Course()
         result = result * PRIME + this.getYear_applicable();
         result = result * PRIME + this.getLecturer_id();
         return result;
-    }
-
-    public String toString() {
-        return "Course(course_ID=" + this.getCourse_ID() + ", credits_num=" + this.getCredits_num() + ", course_name=" + this.getCourse_name() + ", course_type=" + this.getCourse_type() + ", school_name=" + this.getSchool_name() + ", year_applicable=" + this.getYear_applicable() + ", lecturer_id=" + this.getLecturer_id() + ")";
     }
 }
 

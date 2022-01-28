@@ -18,12 +18,12 @@ SAME AS CLASS DIAGRAM BUT THE "FILE" column will contain only full file path
 6)COURSE_METADATA TABLE
 student_id, course_id, course_grade.
 
-7) ASSIGNMENT TABLE
+7) ASSIGNMENT_MetaData TABLE
 student_id, asgn_id, course_id,solution_file_path, asgn_grade
 
 --------INPUTTING DATA SEQUENCE--------------
 
-1) STUDENT and ADMIN (can use Threading techniques)
+1) STUDENT
 2) Lecturer
 3) COURSE METADATA AND ASSIGNMENT METADATA (DEPENDANT ON STUDENT DATASTRUCTURE )
 4) ASSIGNMENT

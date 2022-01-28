@@ -10,12 +10,16 @@ import java.io.IOException;
 public class DatabaseFiller {
     public static DataBase db = DataBase.getInstance();
     static {
-
+        fill_students();
+        fill_lecturers();
+        fill_assignments();
+        fill_courses();
+        fill_courses_metadata();
+        fill_assignment_metadata();
     }
     public static void fill_students() {
         String path = "data-source/STUDENT TABLE.csv";
         String line = "";
-
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
             br.readLine();
@@ -51,15 +55,15 @@ public class DatabaseFiller {
 
                 db.students.put(id,stu);
             }
-
+            br.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
 
+    }
     public static void fill_lecturers(){
         String path = "data-source/LECTURER TABLE.csv";
         String line = "";
@@ -80,7 +84,9 @@ public class DatabaseFiller {
                 String school_name = values[7];
                 String email = values[8];
                 String password = values[9];
-
+                int day_hired = Integer.parseInt(values[10]);
+                int month_hired = Integer.parseInt(values[11]);
+                int year_hired = Integer.parseInt(values[12]);
                 lecturer lec = new lecturer();
                 lec.setUni_ID(id);
                 lec.setFname(firstName);
@@ -90,39 +96,11 @@ public class DatabaseFiller {
                 lec.setSchool_name(school_name);
                 lec.setEmail(email);
                 lec.setPassword(password);
+                lec.set_hired_date(year_hired,month_hired,day_hired);
 
                 db.lecturers.put(id,lec);
             }
-
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-    public static void fill_courses_metadata(){
-        String path = "data-source/COURSE_METADATA TABLE.csv";
-        String line = "";
-
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(path));
-            br.readLine();
-            while((line = br.readLine())!=null)
-            {
-                String[] values = line.split(",");
-                int stu_id = Integer.parseInt(values[0]);
-                String course_id = values[1];
-                String course_grade = values[2];
-
-                Course_Metadata course_metadata = new Course_Metadata();
-                course_metadata.setCourse_ID(course_id);
-                course_metadata.setCourse_grade(course_grade);
-
-                db.students.get(stu_id).get_all_courses().put(course_id,course_metadata);
-
-            }
+            br.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -131,32 +109,6 @@ public class DatabaseFiller {
         }
 
     }
-    public static void fill_assignment_metadata(){
-        String path = "data-source/ASSIGNMENT_METADATA TABLE.csv";
-        String line = "";
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(path));
-            br.readLine();
-            while ((line = br.readLine())!=null)
-            {
-                String[] values = line.split(",");
-                int stu_id = Integer.parseInt(values[0]);
-                String asgn_id = values[1];
-                String course_id = values[2];
-                String asgn_answer = values[3];
-                String asgn_grade = values[4];
-
-                //Assignment_Metadata assignment_metadata = new Assignment_Metadata();
-
-
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public static void fill_assignments(){
 
         String path = "data-source/ASSIGNMENT TABLE.csv";
@@ -167,7 +119,7 @@ public class DatabaseFiller {
             while((line = br.readLine())!=null)
             {
                 String[] values = line.split(",");
-                String asgn_id = values[0];
+                int asgn_id = Integer.parseInt(values[0]);
                 String course_id = values[1];
                 String asgn_type = values[2];
                 String asgn_questions = values[3];
@@ -179,6 +131,7 @@ public class DatabaseFiller {
                 assi.set_assignment_question(asgn_questions);
                 db.assignments.put(asgn_id,assi);
             }
+            br.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -215,11 +168,13 @@ public class DatabaseFiller {
                 course.setLecturer_id(lecturer_id);
 
                 db.courses.put(course_id,course);
-                if(course.getLecturer_id() != -99)
+                if(lecturer_id != -99 && db.lecturers.containsKey(lecturer_id))
                 {
                     db.lecturers.get(lecturer_id).get_course_taught().add(course_id);
                 }
             }
+            br.close();
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -228,6 +183,67 @@ public class DatabaseFiller {
 
 
     }
+    public static void fill_courses_metadata(){
+        String path = "data-source/COURSE_METADATA TABLE.csv";
+        String line = "";
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(path));
+            br.readLine();
+            while((line = br.readLine())!=null)
+            {
+                String[] values = line.split(",");
+                int stu_id = Integer.parseInt(values[0]);
+                String course_id = values[1];
+                String course_grade = values[2];
+
+                Course_Metadata course_metadata = new Course_Metadata();
+                course_metadata.setCourse_ID(course_id);
+                course_metadata.setCourse_grade(course_grade);
+                //making sure that this course metadata belongs to an actual student in the system
+                if (db.students.containsKey(stu_id) && db.courses.containsKey(course_id)) {
+                    db.students.get(stu_id).get_all_courses().put(course_id, course_metadata);
+                }
+
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public static void fill_assignment_metadata(){
+        String path = "data-source/ASSIGNMENT_METADATA TABLE.csv";
+        String line = "";
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(path));
+            br.readLine();
+            while ((line = br.readLine())!=null)
+            {
+                String[] values = line.split(",");
+                int stu_id = Integer.parseInt(values[0]);
+                int asgn_id = Integer.parseInt(values[1]);
+                String course_id = values[2];
+                String asgn_answer = values[3];
+                String asgn_grade = values[4];
+
+                Assignment_Metadata assignment_metadata = new Assignment_Metadata(asgn_id,course_id,asgn_answer,asgn_grade);
+                //making sure that this assignment metadata belongs to an actual student in the system
+                if (db.students.containsKey(stu_id) && db.assignments.containsKey(asgn_id)) {
+                    db.students.get(stu_id).get_all_assignments().put(asgn_id, assignment_metadata);
+                }
+
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 
