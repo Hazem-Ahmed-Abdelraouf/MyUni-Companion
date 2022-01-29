@@ -1,1 +1,0 @@
-It is a collection of programs that enables users to create and maintain databases and control all access to them.
