@@ -9,10 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -122,18 +119,24 @@ public class StudentInspectCourseController implements Initializable {
     }
     @FXML
     public void switchToSolvingScene(ActionEvent e) {
-        Assignment selected_asgn  = table.getSelectionModel().getSelectedItem();
-        db.dataTransporter.put("assignment id",Integer.toString(selected_asgn.getAssignment_ID()));
-        Parent solvingPage = null;
-        try {
-            solvingPage = FXMLLoader.load(StudentInspectCourseController.class.getResource("Solving Assignment(Scene5).fxml"));
-            Scene solvingScene = new Scene(solvingPage);
-            Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
-            window.setScene(solvingScene);
-            window.setTitle("Solving Assignment Page");
-            window.show();
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        Alert alert = null;
+        if (table.getSelectionModel().getSelectedItem() == null) {
+            alert = new Alert(Alert.AlertType.ERROR, "Please select an assignment to solve", ButtonType.OK);
+            alert.showAndWait();
+        } else {
+            Assignment selected_asgn = table.getSelectionModel().getSelectedItem();
+            db.dataTransporter.put("assignment id", Integer.toString(selected_asgn.getAssignment_ID()));
+            Parent solvingPage = null;
+            try {
+                solvingPage = FXMLLoader.load(StudentInspectCourseController.class.getResource("Solving Assignment(Scene5).fxml"));
+                Scene solvingScene = new Scene(solvingPage);
+                Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                window.setScene(solvingScene);
+                window.setTitle("Solving Assignment Page");
+                window.show();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

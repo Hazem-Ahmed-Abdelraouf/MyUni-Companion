@@ -102,12 +102,17 @@ public class LecturerHompPage implements Initializable {
     //inspect course method
     @FXML
     private void inspectCourse(ActionEvent e){
-        Course selected_course = table.getSelectionModel().getSelectedItem();
-
-        if(selected_course != null){
-            //transferring the data
-            db.dataTransporter.put("course id",selected_course.getCourse_ID());
-            switchToInspectCourseScene("lecturer-registered students(scene 10).fxml", e);
+        Alert alert = null;
+        if (table.getSelectionModel().getSelectedItem() == null) {
+            alert = new Alert(Alert.AlertType.ERROR, "Please select a course to inspect", ButtonType.OK);
+            alert.showAndWait();
+        } else {
+            Course selected_course = table.getSelectionModel().getSelectedItem();
+            if (selected_course != null) {
+                //transferring the data
+                db.dataTransporter.put("course id", selected_course.getCourse_ID());
+                switchToInspectCourseScene("lecturer-inspect course(scene 10).fxml", e);
+            }
         }
     }
 

@@ -60,17 +60,18 @@
                   </Text>
                   <TableView fx:id="table" layoutY="24.0" prefHeight="152.0" prefWidth="600.0" style="-fx-background-color: #c9c0d3;">
                      <columns>
-                        <TableColumn fx:id="StudendIdCol" prefWidth="109.60000306367874" text="Student ID" />
-                        <TableColumn fx:id="stuNameCol" prefWidth="274.40003967285156" text="Student Name" />
-                        <TableColumn fx:id="stuEmailCol" prefWidth="215.199951171875" text="Student Email" />
+                        <TableColumn fx:id="stuIDCol" prefWidth="109.60000306367874" text="Student ID" />
+                        <TableColumn fx:id="stuFNameCol" prefWidth="144.8000030517578" text="First Name " />
+                        <TableColumn fx:id="stuLNameCol" minWidth="0.0" prefWidth="145.60003662109375" text="Last Name" />
+                        <TableColumn fx:id="stuEmailCol" minWidth="5.60003662109375" prefWidth="200.79998779296875" text="Student Email" />
                      </columns>
                   </TableView>
-                  <Button fx:id="solveBtn1" layoutX="446.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchToSolvingScene" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: #a27e7e;" text="Grade Student" textFill="WHITE">
+                  <Button fx:id="gradeStuBtn" layoutX="446.0" layoutY="185.0" mnemonicParsing="false" onAction="#gradeStudent" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: #a27e7e;" text="Grade Student" textFill="WHITE">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button fx:id="seeAsgnBtn" layoutX="196.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchToSolvingScene" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #a27e7e;" text="See Courses Assignments" textFill="WHITE">
+                  <Button fx:id="seeAsgnBtn" layoutX="196.0" layoutY="185.0" mnemonicParsing="false" onAction="#seeAsgn" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #a27e7e;" text="See Courses Assignments" textFill="WHITE">
                      <font>
                         <Font size="15.0" />
                      </font>

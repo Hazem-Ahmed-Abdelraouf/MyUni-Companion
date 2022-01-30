@@ -63,7 +63,7 @@
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button fx:id="registerBtn" layoutX="216.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: #a27e7e;" text="Register a Course" textFill="WHITE">
+                  <Button fx:id="registerBtn" layoutX="216.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchToLecRegisterCourse" style="-fx-background-color: #a27e7e;" text="Register a Course" textFill="WHITE">
                      <font>
                         <Font size="15.0" />
                      </font>
