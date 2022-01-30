@@ -22,7 +22,7 @@ public class Student extends Member {
     public void set_date_enrolled(int year, int month_num, int day_of_month) {
         date_enrolled = LocalDate.of(year, month_num, day_of_month);
     }
-
+    public void set_date_enrolled(LocalDate date_enrolled){this.date_enrolled=date_enrolled;}
     public int get_student_year() {
         return Period.between(date_enrolled, LocalDate.now()).getYears();
     }
@@ -91,25 +91,22 @@ public class Student extends Member {
         return;
     }
 
-    public boolean unregister_course(String course_id) {
+    public void unregister_course(String course_id) {
 
         if (courses_metadata.containsKey(course_id)) {
             ArrayList<Integer> asgns_keys = new ArrayList<>();
             courses_metadata.remove(course_id);
             //getting the asssinment keys to delete them
-            asgns_metadata.forEach((key, asgn)
-                    -> {
+            asgns_metadata.forEach((key, asgn) -> {
                 if (asgn.getCourse_id() == course_id)
                     asgns_keys.add(asgn.getAssignment_id());
             });
             //deleting the assignments metadata
             for (int i = 0; i < asgns_keys.size(); i++)
                 asgns_metadata.remove(asgns_keys.get(i));
-            return true;
+
         }
 
-        //returns false if there is no
-        return false;
     }
 
     public HashMap<Integer, Assignment_Metadata> get_all_assignments() {

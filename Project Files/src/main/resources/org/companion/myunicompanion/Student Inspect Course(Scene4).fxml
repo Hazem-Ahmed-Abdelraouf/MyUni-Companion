@@ -4,48 +4,69 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.companion.myunicompanion.StudentInspectCourseController">
    <children>
-      <SplitPane dividerPositions="0.30462519936204147" layoutX="184.0" layoutY="132.0" orientation="VERTICAL" prefHeight="629.0" prefWidth="871.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="236.0" prefWidth="869.0">
+      <SplitPane dividerPositions="0.426" layoutX="238.0" layoutY="100.0" orientation="VERTICAL" prefHeight="502.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="203.0" prefWidth="820.0" style="-fx-background-color: #eee5f8;">
                <children>
-                  <TitledPane alignment="TOP_CENTER" layoutY="1.0" prefHeight="24.0" prefWidth="598.0" text="Course Information" />
-                  <TextFlow layoutX="7.0" layoutY="25.0" prefHeight="96.0" prefWidth="592.0" style="-fx-background-color: #8c88#b8b0b08;" />
+                  <Text fx:id="courseName" layoutX="22.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="500.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lecturerName" layoutX="23.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Name:" wrappingWidth="500.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="courseType" layoutX="23.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="91.73669052124023">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="courseID" layoutX="23.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code" wrappingWidth="91.73669052124023">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="242.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Info">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="229.0" prefWidth="599.0">
                <children>
-                  <TitledPane alignment="TOP_CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="24.0" prefWidth="598.0" text="Assignment view" />
-                  <TableView layoutY="25.0" prefHeight="209.0" prefWidth="598.0" style="-fx-background-color: #a0a9c1;">
-                    <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
-                    </columns>
+                  <Button fx:id="returnBtn" layoutX="46.0" layoutY="185.0" mnemonicParsing="false" onAction="#returnToHome" style="-fx-background-color: #a27e7e;" text="Return to home" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="solveBtn" layoutX="414.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchToSolvingScene" prefHeight="31.0" prefWidth="126.0" style="-fx-background-color: #a27e7e;" text="Solve" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="227.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Assignments">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="table" layoutY="24.0" prefHeight="152.0" prefWidth="600.0" style="-fx-background-color: #c9c0d3;">
+                     <columns>
+                        <TableColumn fx:id="assignQuestionCol" prefWidth="448.7999694943428" text="Assignemnt Name" />
+                        <TableColumn fx:id="assignTypeCol" prefWidth="151.20001220703125" text="Assignment Type" />
+                     </columns>
                   </TableView>
-                  <Button layoutX="8.0" layoutY="234.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="188.0" text="Return to home page">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="219.0" layoutY="235.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="143.0" text="Solve">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="408.0" layoutY="236.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="143.0" text="Inspect">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Button>
                </children>
             </AnchorPane>
-        </items>
+         </items>
       </SplitPane>
    </children>
 </AnchorPane>

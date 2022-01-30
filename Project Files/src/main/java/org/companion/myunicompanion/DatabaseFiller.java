@@ -113,20 +113,22 @@ public class DatabaseFiller {
 
     private static void fill_assignments() {
 
-        String path = "data-source/ASSIGNMENT TABLE.csv";
+        String path = "data-source/ASSIGNMENT TABLE.txt";
         String line = "";
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
             br.readLine();
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
+                String[] values = line.split(";");
                 int asgn_id = Integer.parseInt(values[0]);
-                String course_id = values[1];
-                String asgn_type = values[2];
-                String asgn_questions = values[3];
+                String asgn_name = values[1];
+                String course_id = values[2];
+                String asgn_type = values[3];
+                String asgn_questions = values[4];
 
                 Assignment assi = new Assignment();
                 assi.setAssignment_ID(asgn_id);
+                assi.setAssignment_name(asgn_name);
                 assi.setCourse_ID(course_id);
                 assi.setAssignment_type(asgn_type);
                 assi.set_assignment_question(asgn_questions);
@@ -216,13 +218,13 @@ public class DatabaseFiller {
     }
 
     private static void fill_assignment_metadata() {
-        String path = "data-source/ASSIGNMENT_METADATA TABLE.csv";
+        String path = "data-source/ASSIGNMENT_METADATA TABLE.txt";
         String line = "";
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
             br.readLine();
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
+                String[] values = line.split(";");
                 int stu_id = Integer.parseInt(values[0]);
                 int asgn_id = Integer.parseInt(values[1]);
                 String course_id = values[2];

@@ -5,85 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44c811ac-9bd3-4361-b849-781e1d7eed3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-source/ASSIGNMENT TABLE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_base_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_base_win_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_controls_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_controls_win_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_fxml_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_graphics_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_17_0_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_17_0_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/libraries/lombok.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/Asgn-Questions/CMT221_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/Asgn-Solutions/123_CMT221_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/MyUni-Companion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyUni-Companion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/data-source/ASSIGNMENT TABLE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/data-source/ASSIGNMENT_METADATA TABLE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/data-source/COURSE TABLE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/data-source/COURSE_METADATA TABLE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/data-source/LECTURER TABLE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/data-source/STUDENT TABLE.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/Controllers/DataBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/Controllers/DatabaseFiller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Lecturer Home Page(Scene7).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Lecturer-Add asignment (Scene 12).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Lecturer-create course(scene 9).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Lecturer-grade assignment (scene 14).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Lecturer-register course(scene 8).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Login(Scene1).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/New Account(Scene2).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Register Course(Scene6).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Solving Assignment(Scene5).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Student HomePage(Scene3).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/Student Inspect Course(Scene4).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/lecturer-grade assignment (scene 13).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/lecturer-registered students(scene 10).fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/lecturer-see students assignments.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/FXML/ringlogo-01(1)(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Assignment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Assignment_Metadata.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Course_Metadata.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/java/org/companion/myunicompanion/lecturer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/src/main/resources/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/Controllers/DataBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/Controllers/DatabaseFiller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/Controllers/T.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Assignment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Assignment_Metadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Course_Metadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/org/companion/myunicompanion/lecturer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyUni-Companion/target/classes/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-source/ASSIGNMENT TABLE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-source/ASSIGNMENT_METADATA TABLE.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-source/ASSIGNMENT_METADATA TABLE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-source/STUDENT TABLE.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data-source/STUDENT TABLE.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/DatabaseFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/DatabaseFiller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/LoginScene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/LoginScene1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/classes/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/classes/Assignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/classes/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/classes/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Lecturer-grade assignment (scene 14).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Lecturer-grade assignment (scene 14).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Login(Scene1).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Login(Scene1).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/New Account(Scene2).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/New Account(Scene2).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Solving Assignment(Scene5).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Solving Assignment(Scene5).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Student HomePage(Scene3).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Student HomePage(Scene3).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Student Inspect Course(Scene4).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/Student Inspect Course(Scene4).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/lecturer-grade assignment (scene 13).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/companion/myunicompanion/lecturer-see all students assignment(scene 13).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/DatabaseFiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/DatabaseFiller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/LoginScene1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/LoginScene1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Student HomePage(Scene3).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Student HomePage(Scene3).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Student Inspect Course(Scene4).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Student Inspect Course(Scene4).fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/classes/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/classes/Assignment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/classes/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/classes/Student.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +69,9 @@
       <recent name="C:\Users\Haz&amp;Moh\OneDrive - Universiti Sains Malaysia\Courses\CAT201 Integrated Workshop\Java Proj\Project Files\src\main\resources\org\companion\myunicompanion" />
       <recent name="C:\Users\Haz&amp;Moh\OneDrive - Universiti Sains Malaysia\Courses\CAT201 Integrated Workshop\Java Proj\Project Files\src\main\java\org\companion\myunicompanion" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.companion.myunicompanion" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -131,7 +79,7 @@
       <module name="MyUni-Companion" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.companion.myunicompanion.classes.*" />
+          <option name="PATTERN" value="org.companion.myunicompanion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,7 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643458550826</updated>
-      <workItem from="1643458552201" duration="7756000" />
+      <workItem from="1643458552201" duration="26403000" />
+      <workItem from="1643512832071" duration="16993000" />
     </task>
     <servers />
   </component>
@@ -170,5 +119,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/LoginScene1Controller.java</url>
+          <line>23</line>
+          <properties field="errMsg" class="org.companion.myunicompanion.LoginScene1Controller" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

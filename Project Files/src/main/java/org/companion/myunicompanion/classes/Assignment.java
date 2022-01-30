@@ -18,13 +18,9 @@ public class Assignment {
         return assignment_ID;
     }
 
-    public void setAssignment_name(String assignment_name) {
-        this.assignment_name = assignment_name;
-    }
+    public void setAssignment_name(String assignment_name){this.assignment_name = assignment_name;}
 
-    public String getAssignment_name() {
-        return assignment_name;
-    }
+    public String getAssignment_name(){return this.assignment_name;}
 
     public void setCourse_ID(String course_ID) {
         this.course_ID = course_ID;
@@ -47,9 +43,7 @@ public class Assignment {
         assignment_question = new String(file_path);
     }
 
-    public String get;
-
-    String assignment_question() {
+    public String getAssignment_question() {
         return assignment_question;
     }
 

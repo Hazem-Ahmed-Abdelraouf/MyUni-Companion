@@ -43,7 +43,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="219.0" layoutY="250.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: #d3d4cc;" text="New account">
+                  <Button fx:id="newAccountBtn" layoutX="219.0" layoutY="250.0" mnemonicParsing="false" onAction="#switchToCreateAccount" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: #d3d4cc;" text="New account">
                      <font>
                         <Font size="18.0" />
                      </font>

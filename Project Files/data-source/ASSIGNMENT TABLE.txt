@@ -1,0 +1,13 @@
+asgn_ID;asgn_name;course_ID;asgn_type;qustions
+1;Working Set;CST232;H.W.;If the working set of a process is reduced, it will _____.
+2;Demand Paging;CST232;H.W.;Using demand paging technique what are the possible issues that you might face?
+3;Queues;CPT113;H.W.;What is queue explain?
+4;LIFO & FIFO;CPT113;H.W.;Is queue LIFO or FIFO?
+5;Resources Scarcity;AKW104;H.W.;What does resource scarcity mean?
+6;Utility Maximization;AKW104;H.W.;What is the subject of the pursuit of utility maximization?
+7;Marketing H.W.;AKP201;H.W.;What is the core of marketing?
+8;Business H.W.;AKP201;H.W.;What is the most significant primary core of the business?
+9;Drugs H.W.;SCE132;H.W.;What form does the drug include?
+10;Decomposition H.W.;SCE132;H.W.;What kind of bottle is used for substances that are easily decomposed by light?
+11;Preservation Part 1;SCU211;H.W.;what us the preservation method of anti-oxidation?
+12;Preservation Part 2;SCU211;H.W.;What is the Anti-volatile preservation method?
