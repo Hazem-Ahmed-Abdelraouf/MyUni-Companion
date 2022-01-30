@@ -31,12 +31,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="registerBtn" layoutX="226.0" layoutY="41.0" mnemonicParsing="false" onAction="#registerCourse" prefHeight="44.0" prefWidth="126.0" text="Register">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="returnBtn1" layoutX="378.0" layoutY="41.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="44.0" prefWidth="166.0" style="-fx-border-color: #e0cdcf;" text="Create new">
+                  <Button fx:id="registerBtn" layoutX="410.0" layoutY="41.0" mnemonicParsing="false" onAction="#registerCourse" prefHeight="44.0" prefWidth="126.0" text="Register">
                      <font>
                         <Font size="18.0" />
                      </font>
