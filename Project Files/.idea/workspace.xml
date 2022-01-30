@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44c811ac-9bd3-4361-b849-781e1d7eed3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/CreateAsgnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/CreateAsgnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/LecturerHompPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/companion/myunicompanion/LecturerHompPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643458550826</updated>
       <workItem from="1643458552201" duration="26403000" />
-      <workItem from="1643512832071" duration="35802000" />
+      <workItem from="1643512832071" duration="36757000" />
     </task>
     <servers />
   </component>

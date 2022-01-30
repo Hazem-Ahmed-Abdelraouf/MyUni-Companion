@@ -81,14 +81,14 @@ public class LecturerHompPage implements Initializable {
         courseName.setCellValueFactory(new PropertyValueFactory<Course, String>("course_name"));
         courseCode.setCellValueFactory(new PropertyValueFactory<Course, String>("course_ID"));
         courseType.setCellValueFactory(new PropertyValueFactory<Course, String>("course_type"));
-        ObservableList<Course> list = getCourses(lec_id);
+        ObservableList<Course> list = getCourses();
         if(!(list.isEmpty()))
             table.setItems(list);
 
         table.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
     }
 
-    private ObservableList<Course> getCourses(int lec_id){
+    private ObservableList<Course> getCourses(){
         ObservableList<Course> list =  FXCollections.observableArrayList();
         //getting the course ids to get their information
         ArrayList<String> courses_taught = db.lecturers.get(lec_id).get_course_taught();
