@@ -39,8 +39,8 @@ public class Assignment {
     }
 
 
-    public void set_assignment_question(String file_path) {
-        assignment_question = new String(file_path);
+    public void set_assignment_question(String questions) {
+        assignment_question = new String(questions);
     }
 
     public String getAssignment_question() {

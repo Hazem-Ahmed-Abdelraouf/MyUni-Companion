@@ -133,6 +133,7 @@ public class DatabaseFiller {
                 assi.setAssignment_type(asgn_type);
                 assi.set_assignment_question(asgn_questions);
                 db.assignments.put(asgn_id, assi);
+                db.incrementAsgnSurKey();
             }
             br.close();
         } catch (FileNotFoundException e) {
@@ -229,9 +230,8 @@ public class DatabaseFiller {
                 int asgn_id = Integer.parseInt(values[1]);
                 String course_id = values[2];
                 String asgn_answer = values[3];
-                String asgn_grade = values[4];
 
-                Assignment_Metadata assignment_metadata = new Assignment_Metadata(asgn_id, course_id, asgn_answer, asgn_grade);
+                Assignment_Metadata assignment_metadata = new Assignment_Metadata(asgn_id, course_id, asgn_answer);
                 //making sure that this assignment metadata belongs to an actual student in the system
                 if (db.students.containsKey(stu_id) && db.assignments.containsKey(asgn_id)) {
                     db.students.get(stu_id).add_asgn_metadata(asgn_id, assignment_metadata);

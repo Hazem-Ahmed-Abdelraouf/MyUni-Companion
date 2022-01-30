@@ -18,7 +18,7 @@ public class DataBase {
     public static HashMap<Integer, Assignment> assignments = new HashMap<>();
     // for data transformation between scenes
     public static HashMap<String, String> dataTransporter = new HashMap<>();
-    public static HashMap<String, Integer> surrogateKeyHandler = new HashMap<>();
+    private static int asgnSurrogateKey = 0;
     private static DataBase instance = new DataBase();
 
     private DataBase() {
@@ -27,4 +27,7 @@ public class DataBase {
     public static DataBase getInstance() {
         return instance;
     }
+    public static int getAsgnSurKey(){return asgnSurrogateKey;}
+    public static void incrementAsgnSurKey(){asgnSurrogateKey++;}
+    public static void resetAsgnSurKey(){asgnSurrogateKey = 0;}
 }
