@@ -125,9 +125,9 @@ public class LecturerHompPage implements Initializable {
         }
     }
     @FXML
-    private void unregisterCourse(ActionEvent e){
+    private void unregisterCourse(ActionEvent e) {
         Course selected_course = table.getSelectionModel().getSelectedItem();
-        if(selected_course !=null){
+        if (selected_course != null) {
             //Alert popup
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to unregister this course?", ButtonType.YES, ButtonType.CANCEL);
             alert.showAndWait();
@@ -137,8 +137,22 @@ public class LecturerHompPage implements Initializable {
                 db.lecturers.get(lec_id).deregister_course(selected_course.getCourse_ID());
             }
         }
-
     }
+        @FXML
+        public void switchToLecRegisterCourse(ActionEvent e){
+            Parent coursePage = null;
+            try {
+                coursePage = FXMLLoader.load(LecturerHompPage.class.getResource("Lecturer-register course(scene 8).fxml"));
+                Scene lecScene = new Scene(coursePage);
+                Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+                window.setScene(lecScene);
+                window.setTitle("Register Course");
+                window.show();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
 
 
 }
