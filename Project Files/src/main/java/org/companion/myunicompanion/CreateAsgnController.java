@@ -40,7 +40,7 @@ public class CreateAsgnController implements Initializable {
         typesbox.getSelectionModel().selectFirst();
     }
     @FXML
-    void createAsgn(ActionEvent event) {
+    void createAsgn(ActionEvent e) {
         Alert alert = null;
         if(!(name.getText().isBlank() || questions.getText().isBlank())){
             Assignment newAsgn = new Assignment();
@@ -51,7 +51,9 @@ public class CreateAsgnController implements Initializable {
             newAsgn.setAssignment_type(typesbox.getValue());
             newAsgn.set_assignment_question(questions.getText());
             db.assignments.put(newAsgn.getAssignment_ID(), newAsgn);
-
+            alert = new Alert(Alert.AlertType.INFORMATION, "Assignment created successfully", ButtonType.OK);
+            alert.showAndWait();
+            returnToCoursesAsgns(e);
         }
         else
         {
