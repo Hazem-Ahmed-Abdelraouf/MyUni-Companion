@@ -49,6 +49,7 @@ public class LoginScene1Controller {
                    if(db.lecturers.get(id).getPassword().equals(password.getText())){
                        db.dataTransporter.put("lecturer id",idField.getText());
                        //go to lecturer homepage scene
+                       goToLecturerHomePage(e);
                    }//password doesn't match
                    else {
                        errMsg.setText("Wrong Password!");
@@ -84,7 +85,17 @@ public class LoginScene1Controller {
         }
     }
     private void goToLecturerHomePage(ActionEvent e){
-
+        Parent lecPage = null;
+        try {
+            lecPage = FXMLLoader.load(LoginScene1Controller.class.getResource("Lecturer Home Page(Scene7).fxml"));
+            Scene lecScene = new Scene(lecPage);
+            Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            window.setScene(lecScene);
+            window.setTitle("Lecturer Home Page");
+            window.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @FXML

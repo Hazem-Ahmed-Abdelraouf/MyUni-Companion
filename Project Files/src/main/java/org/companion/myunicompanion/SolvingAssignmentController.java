@@ -62,7 +62,7 @@ public class SolvingAssignmentController implements Initializable {
     private void switchToHome(ActionEvent e) {
         Parent homePage = null;
         try {
-            homePage = FXMLLoader.load(StudentInspectCourseController.class.getResource("Student HomePage(Scene3).fxml"));
+            homePage = FXMLLoader.load(SolvingAssignmentController.class.getResource("Student HomePage(Scene3).fxml"));
             Scene homeScene = new Scene(homePage);
             Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
             window.setScene(homeScene);

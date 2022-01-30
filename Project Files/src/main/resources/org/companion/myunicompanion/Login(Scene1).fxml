@@ -37,7 +37,7 @@
                      </font>
                   </Label>
                   <TextField fx:id="idField" layoutX="138.0" layoutY="101.0" prefHeight="22.0" prefWidth="217.0" style="-fx-background-color: #ffffff;" />
-                  <PasswordField fx:id="password" layoutX="138.0" layoutY="166.0" prefHeight="22.0" prefWidth="218.0" style="-fx-background-color: #ffffff;" />
+                  <PasswordField fx:id="password" layoutX="138.0" layoutY="166.0" onAction="#checkCredentials" prefHeight="22.0" prefWidth="218.0" style="-fx-background-color: #ffffff;" />
                   <Button fx:id="loginBtn" layoutX="37.0" layoutY="250.0" mnemonicParsing="false" onAction="#checkCredentials" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #d3d4cc;" text="login">
                      <font>
                         <Font size="18.0" />

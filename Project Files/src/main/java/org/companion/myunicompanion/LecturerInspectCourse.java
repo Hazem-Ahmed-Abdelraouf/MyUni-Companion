@@ -17,27 +17,22 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.companion.myunicompanion.classes.Assignment;
-import org.companion.myunicompanion.classes.Assignment_Metadata;
 import org.companion.myunicompanion.classes.Course;
 import org.companion.myunicompanion.classes.Student;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.ResourceBundle;
 
 import static org.companion.myunicompanion.DatabaseFiller.db;
 
-public class StudentInspectCourseController implements Initializable {
-    @FXML
-    private TableView<Assignment> table;
+public class LecturerInspectCourse implements Initializable {
 
     @FXML
-    private TableColumn<Assignment,String> assignQuestionCol;
+    private TableColumn<?, ?> StudendIdCol;
 
     @FXML
-    private TableColumn<Assignment,String> assignTypeCol;
+    private Text courseCredits;
 
     @FXML
     private Text courseID;
@@ -50,14 +45,25 @@ public class StudentInspectCourseController implements Initializable {
 
     @FXML
     private Text lecturerName;
-    @FXML
-    private Text courseCredits;
 
     @FXML
     private Button returnBtn;
 
     @FXML
-    private Button solveBtn;
+    private Button seeAsgnBtn;
+
+    @FXML
+    private Button solveBtn1;
+
+    @FXML
+    private TableColumn<?, ?> stuEmailCol;
+
+    @FXML
+    private TableColumn<?, ?> stuNameCol;
+
+    @FXML
+    private TableView<?> table;
+
 
 
     @Override
@@ -74,8 +80,8 @@ public class StudentInspectCourseController implements Initializable {
         if(lecturer_id== -99)
             lec_full_name = "No Lecturer assigned yet";
         else {
-         lec_fisrt_name=db.lecturers.get(lecturer_id).getFname();
-         lec_full_name = lec_fisrt_name + " " + db.lecturers.get(lecturer_id).getLname();
+            lec_fisrt_name=db.lecturers.get(lecturer_id).getFname();
+            lec_full_name = lec_fisrt_name + " " + db.lecturers.get(lecturer_id).getLname();
         }
         // Setting the course info on the scene
         courseID.setText("Course code: "+ course.getCourse_ID());
@@ -84,14 +90,14 @@ public class StudentInspectCourseController implements Initializable {
         lecturerName.setText("Lecturer Name: "+lec_full_name);
         courseCredits.setText("Course Credits: "+Integer.toString(course.getCredits_num()));
         //setting the columns
-        assignQuestionCol.setCellValueFactory(new PropertyValueFactory<Assignment, String>("assignment_name"));
+        /*assignQuestionCol.setCellValueFactory(new PropertyValueFactory<Assignment, String>("assignment_name"));
         assignTypeCol.setCellValueFactory(new PropertyValueFactory<Assignment, String>("assignment_type"));
 
         ObservableList<Assignment> list = getAssignments(current_course_id);
 
         if(!(list.isEmpty()))
             table.setItems(list);
-
+        */
         table.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
     }
     private ObservableList<Assignment> getAssignments(String current_course_id){
@@ -122,7 +128,7 @@ public class StudentInspectCourseController implements Initializable {
     }
     @FXML
     public void switchToSolvingScene(ActionEvent e) {
-        Assignment selected_asgn  = table.getSelectionModel().getSelectedItem();
+       /* Assignment selected_asgn  = table.getSelectionModel().getSelectedItem();
         db.dataTransporter.put("assignment id",Integer.toString(selected_asgn.getAssignment_ID()));
         Parent solvingPage = null;
         try {
@@ -134,20 +140,10 @@ public class StudentInspectCourseController implements Initializable {
             window.show();
         } catch (IOException ex) {
             ex.printStackTrace();
-        }
+        }*/
     }
-}
 
-/*
- HashMap<Integer, Assignment_Metadata> stu_asgns = db.students.get(stu_id).get_all_assignments();
-        //check if there is registered courses for the
-        if( stu_asgns != null && !(stu_asgns.isEmpty())) {
-            db.students.get(stu_id).get_all_assignments().forEach((asgn_id, value) -> {
-                assignments_ids.add(asgn_id);
-            });
-            //extracting these assginemnts from the database and filling our list with it
-            assignments_ids.forEach((asgn_id) -> {
-                list.add(db.assignments.get(asgn_id));
-            });
-        }
-* */
+
+
+
+}

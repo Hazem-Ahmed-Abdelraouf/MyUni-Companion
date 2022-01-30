@@ -176,7 +176,7 @@ public class CreateAccountController implements Initializable {
         }
         Parent homePage = null;
         try {
-            homePage = FXMLLoader.load(StudentInspectCourseController.class.getResource(fxml_path));
+            homePage = FXMLLoader.load(CreateAccountController.class.getResource(fxml_path));
             Scene homeScene = new Scene(homePage);
             Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
             window.setScene(homeScene);
@@ -191,7 +191,7 @@ public class CreateAccountController implements Initializable {
     public void switchToLoginScreen(ActionEvent e){
         Parent loginPage = null;
         try {
-            loginPage = FXMLLoader.load(StudentInspectCourseController.class.getResource("Login(Scene1).fxml"));
+            loginPage = FXMLLoader.load(CreateAccountController.class.getResource("Login(Scene1).fxml"));
             Scene loginScene = new Scene(loginPage);
             Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
             window.setScene(loginScene);

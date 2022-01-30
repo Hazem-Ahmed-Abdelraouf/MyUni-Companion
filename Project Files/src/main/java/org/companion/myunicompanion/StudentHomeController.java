@@ -135,7 +135,7 @@ public class StudentHomeController implements Initializable {
     private void switchToInspectCourseScene(String fxmlPath, ActionEvent e){
         Parent coursePage = null;
         try {
-            coursePage = FXMLLoader.load(LoginScene1Controller.class.getResource(fxmlPath));
+            coursePage = FXMLLoader.load(StudentHomeController.class.getResource(fxmlPath));
             Scene stuScene = new Scene(coursePage);
             Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
             window.setScene(stuScene);
@@ -150,7 +150,7 @@ public class StudentHomeController implements Initializable {
     public void switchToregister(ActionEvent e){
         Parent registerPage = null;
         try {
-            registerPage = FXMLLoader.load(LoginScene1Controller.class.getResource("Register Course(Scene6).fxml"));
+            registerPage = FXMLLoader.load(StudentHomeController.class.getResource("Register Course(Scene6).fxml"));
             Scene registerScene = new Scene(registerPage);
             Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
             window.setScene(registerScene);

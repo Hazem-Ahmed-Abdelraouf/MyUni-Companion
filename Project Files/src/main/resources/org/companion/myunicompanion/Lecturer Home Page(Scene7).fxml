@@ -4,48 +4,85 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.companion.myunicompanion.LecturerHompPage">
    <children>
-      <SplitPane dividerPositions="0.38198198198198197" orientation="VERTICAL" prefHeight="557.0" prefWidth="911.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="212.0" prefWidth="909.0">
+      <SplitPane dividerPositions="0.426" layoutX="238.0" layoutY="100.0" orientation="VERTICAL" prefHeight="502.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="203.0" prefWidth="820.0" style="-fx-background-color: #eee5f8;">
                <children>
-                  <TitledPane alignment="TOP_CENTER" prefHeight="24.0" prefWidth="598.0" text="Lecturer Information" />
-                  <TextFlow layoutY="24.0" prefHeight="131.0" prefWidth="598.0" style="-fx-background-color: #8c88#b8b0b08;" />
+                  <Text fx:id="lecName" layoutX="22.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="500.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lecYear" layoutX="344.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" wrappingWidth="179.73669052124023">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lecEmail" layoutX="23.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="600.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lecCountry" layoutX="343.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="91.73669052124023">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lecAge" layoutX="23.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" wrappingWidth="91.73669052124023">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lecIDText" layoutX="23.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="91.73669052124023">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="242.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Info">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="349.0" prefWidth="909.0" style="-fx-background-color: #7b8b6f;">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="229.0" prefWidth="599.0">
                <children>
-                  <TitledPane alignment="TOP_CENTER" prefHeight="24.0" prefWidth="598.0" text="Course Table" />
-                  <TableView layoutX="-1.0" layoutY="24.0" prefHeight="164.0" prefWidth="600.0" style="-fx-background-color: #a0a9c1;">
-                    <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
-                    </columns>
+                  <Button fx:id="inspectBtn" layoutX="57.0" layoutY="185.0" mnemonicParsing="false" onAction="#inspectCourse" style="-fx-background-color: #a27e7e;" text="Inspect" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="unregisterBtn" layoutX="412.0" layoutY="185.0" mnemonicParsing="false" onAction="#unregisterCourse" style="-fx-background-color: #a27e7e;" text="Unregister Course" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="registerBtn" layoutX="216.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: #a27e7e;" text="Register a Course" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="233.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses Taught">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="table" layoutY="24.0" prefHeight="152.0" prefWidth="600.0" style="-fx-background-color: #c9c0d3;">
+                     <columns>
+                        <TableColumn fx:id="courseCode" prefWidth="112.80001527070999" style="-fx-background-color: 0;" text="Course Code" />
+                        <TableColumn fx:id="courseName" prefWidth="356.00001525878906" text="Course Name" />
+                        <TableColumn fx:id="courseType" prefWidth="127.20001220703125" text="Course Type" />
+                     </columns>
                   </TableView>
-                  <Button layoutX="14.0" layoutY="195.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="124.0" text="Inspect" textFill="#698452">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="201.0" layoutY="195.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="161.0" text="Register Course" textFill="#698452">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="398.0" layoutY="194.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="180.0" text="Unregister Course" textFill="#698452">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
                </children>
             </AnchorPane>
-        </items>
+         </items>
       </SplitPane>
    </children>
 </AnchorPane>
