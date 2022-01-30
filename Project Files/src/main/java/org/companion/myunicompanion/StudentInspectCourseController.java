@@ -67,13 +67,19 @@ public class StudentInspectCourseController implements Initializable {
         Course course = db.courses.get(current_course_id);
         //getting the courses's lecturer info
         int lecturer_id = course.getLecturer_id();
-        String lec_fisrt_name = db.lecturers.get(lecturer_id).getFname();
-        String lec_full_name  = lec_fisrt_name + " " +  db.lecturers.get(lecturer_id).getLname();
+        String lec_full_name = "";
+        String lec_fisrt_name = "";
+        if(lecturer_id== -99)
+            lec_full_name = "No Lecturer assigned yet";
+        else {
+         lec_fisrt_name=db.lecturers.get(lecturer_id).getFname();
+         lec_full_name = lec_fisrt_name + " " + db.lecturers.get(lecturer_id).getLname();
+        }
         // Setting the course info on the scene
-        courseID.setText(course.getCourse_ID());
-        courseName.setText(course.getCourse_name());
-        courseType.setText(course.getCourse_type());
-        lecturerName.setText(lec_full_name);
+        courseID.setText("Course code: "+ course.getCourse_ID());
+        courseName.setText("Course Name: "+course.getCourse_name());
+        courseType.setText("Course Type: "+course.getCourse_type());
+        lecturerName.setText("Lecturer Name: "+lec_full_name);
         //setting the columns
         assignQuestionCol.setCellValueFactory(new PropertyValueFactory<Assignment, String>("assignment_name"));
         assignTypeCol.setCellValueFactory(new PropertyValueFactory<Assignment, String>("assignment_type"));

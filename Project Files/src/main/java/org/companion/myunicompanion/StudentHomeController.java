@@ -58,6 +58,8 @@ public class StudentHomeController implements Initializable {
     private Button inspectBtn;
     @FXML
     private Button unregisterBtn;
+    @FXML
+    private Button registerBtn;
 
 
     @Override
@@ -66,7 +68,7 @@ public class StudentHomeController implements Initializable {
         int stu_id = Integer.parseInt(db.dataTransporter.get("student id"));
         Student stu = db.students.get(stu_id);
 
-        stuAge.setText("Age: " + Integer.toString(stu.get_student_year()));
+        stuAge.setText("Age: " + Integer.toString(stu.getAge()));
         stuCountry.setText("Country: "+stu.getCountry());
         stuEmail.setText("Email: "+stu.getEmail());
         stuID.setText("ID: "+Integer.toString(stu.getUni_ID()));
@@ -138,6 +140,21 @@ public class StudentHomeController implements Initializable {
             Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
             window.setScene(stuScene);
             window.setTitle("Inspect Course");
+            window.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void switchToregister(ActionEvent e){
+        Parent registerPage = null;
+        try {
+            registerPage = FXMLLoader.load(LoginScene1Controller.class.getResource("Register Course(Scene6).fxml"));
+            Scene registerScene = new Scene(registerPage);
+            Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            window.setScene(registerScene);
+            window.setTitle("Register Course");
             window.show();
         } catch (IOException ex) {
             ex.printStackTrace();

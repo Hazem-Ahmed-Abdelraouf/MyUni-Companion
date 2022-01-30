@@ -6,7 +6,7 @@ public class Course_Metadata {
 
     public Course_Metadata() {
         course_ID = "";
-        course_grade = "";
+        course_grade = "Not Graded Yet";
     }
 
     public void setCourse_ID(String course_ID) {

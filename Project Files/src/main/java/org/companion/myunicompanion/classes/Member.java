@@ -65,7 +65,7 @@ public class Member {
         birthdate = LocalDate.of(year, month_num, day_of_month);
     }
 
-    public int getBirthdate() {
+    public int getAge() {
         return Period.between(birthdate, LocalDate.now()).getYears();
     }
 
@@ -119,8 +119,8 @@ public class Member {
         final Object this$email = this.getEmail();
         final Object other$email = other.getEmail();
         if (this$email == null ? other$email != null : !this$email.equals(other$email)) return false;
-        final Object this$birthdate = this.getBirthdate();
-        final Object other$birthdate = other.getBirthdate();
+        final Object this$birthdate = this.getAge();
+        final Object other$birthdate = other.getAge();
         if (this$birthdate == null ? other$birthdate != null : !this$birthdate.equals(other$birthdate)) return false;
         return true;
     }
@@ -143,7 +143,7 @@ public class Member {
         result = result * PRIME + ($school_name == null ? 43 : $school_name.hashCode());
         final Object $email = this.getEmail();
         result = result * PRIME + ($email == null ? 43 : $email.hashCode());
-        final Object $birthdate = this.getBirthdate();
+        final Object $birthdate = this.getAge();
         result = result * PRIME + ($birthdate == null ? 43 : $birthdate.hashCode());
         return result;
     }

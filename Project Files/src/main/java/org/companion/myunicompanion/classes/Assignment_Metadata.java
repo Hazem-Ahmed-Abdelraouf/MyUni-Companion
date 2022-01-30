@@ -11,7 +11,7 @@ public class Assignment_Metadata {
         assignment_id = 0;
         course_id = "";
         answer = null;
-        assignment_grade = "";
+        assignment_grade = "Not graded yet";
     }
 
     public Assignment_Metadata(int asgn_id, String course_id, String answer, String asgn_grade) {

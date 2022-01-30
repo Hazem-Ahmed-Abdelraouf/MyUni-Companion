@@ -8,28 +8,30 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.companion.myunicompanion.StudentRegisterCourse">
    <children>
       <SplitPane dividerPositions="0.6467181467181468" orientation="VERTICAL" prefHeight="520.0" prefWidth="831.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="829.0">
                <children>
-                  <TableView layoutY="23.0" prefHeight="235.0" prefWidth="598.0" style="-fx-background-color: #c5b8a5;">
+                  <TableView fx:id="table" layoutY="23.0" prefHeight="235.0" prefWidth="598.0" style="-fx-background-color: #c9c0d3;">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
+                      <TableColumn fx:id="courseCode" prefWidth="80.80001527070999" text="Course Code" />
+                      <TableColumn fx:id="courseName" prefWidth="347.19996643066406" text="Course Name" />
+                        <TableColumn fx:id="courseCredits" prefWidth="88.800048828125" text="Course credits" />
+                        <TableColumn fx:id="courseType" prefWidth="81.59991455078125" text="Course Type" />
                     </columns>
                   </TableView>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="114.0" prefWidth="599.0" style="-fx-background-color: #656565;">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="114.0" prefWidth="599.0" style="-fx-background-color: #c9c0d3;">
                <children>
-                  <Button layoutX="73.0" layoutY="41.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="184.0" style="-fx-border-color: #e0cdcf;" text="Return to home">
+                  <Button fx:id="returnBtn" layoutX="73.0" layoutY="41.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="54.0" prefWidth="184.0" style="-fx-border-color: #e0cdcf;" text="Return to home">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="354.0" layoutY="41.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="184.0" text="Register">
+                  <Button fx:id="registerBtn" layoutX="354.0" layoutY="41.0" mnemonicParsing="false" onAction="#registerCourse" prefHeight="54.0" prefWidth="184.0" text="Register">
                      <font>
                         <Font size="18.0" />
                      </font>
