@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44c811ac-9bd3-4361-b849-781e1d7eed3c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Lecturer-register course(scene 8).fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Lecturer-register course(scene 8).fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/LecturerHompPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/LecturerHompPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/companion/myunicompanion/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +80,8 @@
       <updated>1643458550826</updated>
       <workItem from="1643458552201" duration="26403000" />
       <workItem from="1643512832071" duration="38344000" />
+      <workItem from="1643554993280" duration="525000" />
+      <workItem from="1643556234647" duration="81000" />
     </task>
     <servers />
   </component>
